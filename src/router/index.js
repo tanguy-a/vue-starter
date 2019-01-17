@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home';
-import Album from '@/components/Album';
-import Artist from '@/components/Artist';
+import New from '@/components/New';
+import About from '@/components/About';
 
 Vue.use(Router);
 
@@ -13,13 +13,13 @@ export default new Router({
       name: 'Home',
       component: Home,
     }, {
-      path: '/artist',
-      name: 'Artist',
-      component: Artist
+      path: '/new',
+      name: 'New',
+      component: New
     }, {
-      path: '/album',
-      name: 'Album',
-      component: Album
+      path: '/about',
+      name: 'About',
+      component: About
     }
   ],
 });

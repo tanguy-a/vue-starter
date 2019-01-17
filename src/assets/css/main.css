@@ -1,0 +1,17 @@
+.images-wrapper {
+  margin: auto;
+  width: 50%;
+  background-color: #1a1a1b;
+  padding-top: 1%;
+}
+
+.image-wrapper {
+  max-height: 90%;
+  max-width: 90%;
+  padding-left: 5%;
+  min-width: 90%;
+}
+
+.title {
+  padding-left: 5%
+}
