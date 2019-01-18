@@ -3,6 +3,10 @@
   width: 50%;
   background-color: #1a1a1b;
   padding-top: 1%;
+  /* Round borders*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .image-wrapper {

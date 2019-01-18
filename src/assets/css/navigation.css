@@ -5,6 +5,47 @@
   height: 50px;
   display: block;
   background-color: #1a1a1b;
+  /* Round borders*/
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.menu-list {
+  font-weight: bold;
+}
+
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.menu-icon {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  display: none;
+}
+
+a {
+  color: white;
 }
 
 .nav {
@@ -31,5 +72,41 @@
   display: none;
 }
 
+.show-menu {
+  text-decoration: none;
+  color: #fff;
+  background: #1a1a1b;
+  text-align: center;
+  padding: 10px 0;
+  display: none;
+}
+
+input[type=checkbox]{
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #menu{
+  display: block;
+}
+
 @media (max-width: 800px) {
+  ul {
+    position: static;
+    display: none;
+  }
+
+  li {
+    margin-bottom: 1px;
+  }
+  ul li, li a {
+    width: 100%;
+  }
+
+  .show-menu {
+    display:block;
+  }
+
+  .menu-icon {
+    display:block;
+  }
 }
